@@ -4,7 +4,7 @@ import Choice from '../functional/Choice.js'
 import InputForm from '../functional/InputForm.js'
 import Loading from '../functional/Loading'
 import Error from '../functional/Error'
-import logo from './logo.png'
+
 
 import {Redirect} from 'react-router-dom'
 
@@ -103,7 +103,7 @@ class Start extends React.Component {
             switch(this.state.step){
                 case(1):
                     return (
-                        <Choice logo={logo} onChoice={this.onChoice}/>
+                        <Choice onChoice={this.onChoice}/>
                     );
                 case(2):
                     return (
